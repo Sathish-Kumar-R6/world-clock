@@ -1,0 +1,78 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  }
+
+.circle {
+  position: relative;
+  border-radius: 50%;
+  width: var(--clock-diameter-large);
+  height: var(--clock-diameter-large);
+  background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+  padding: var(--spacing-sm);
+  box-shadow:
+    0 0 0 4px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 3px #efefef,
+    inset 0 0 10px black,
+    0 0 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 480px) {
+  .circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: var(--clock-diameter-small);
+    height: var(--clock-diameter-small);
+  }
+
+  .number {
+    font-size: 10px;
+  }
+}
+
+.number {
+  position: absolute;
+  font-weight: bold;
+}
+
+/* General hand styles */
+.hand {
+  position: absolute;
+  background-color: black;
+  border-radius: 6px;
+  transform-origin: bottom center; /* Ensure rotation happens from the bottom */
+  transition: transform 0.05s cubic-bezier(0.1, 2.7, 0, 0.68);
+}
+
+/* Hour Hand */
+.hour-hand {
+  width: 2%;
+  height: 25%;
+  background: black;
+  top: 25%;
+  left: 50%;
+}
+
+/* Minute Hand */
+.minute-hand {
+  width: 1.5%;
+  height: 35%;
+  background: black;
+  top: 15%;
+  left: 50%;
+}
+
+/* Seconds Hand */
+.seconds-hand {
+  width: 1%;
+  height: 40%;
+  background: red;
+  top: 10%;
+  left: 50%;
+}

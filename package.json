@@ -30,7 +30,7 @@
   "lint-staged": {
     "./**/*.{js,ts,jsx.,tsx}": [
       "yarn prettify",
-      "yarn lint:staged"
+      "yarn lint-staged"
     ],
     "*.json": [
       "yarn prettify"

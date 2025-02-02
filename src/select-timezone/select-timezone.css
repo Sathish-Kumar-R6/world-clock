@@ -24,7 +24,7 @@ select {
   
   select:focus {
     border-color: #1a5dbb;
-    box-shadow: 0 0 5px rgba(26, 93, 187, 0.5);
+    box-shadow: 0 0 5px rgb(26 93 187 / 50%);
   }
   
   select:disabled {

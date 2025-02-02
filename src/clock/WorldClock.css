@@ -13,16 +13,16 @@
   background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
   padding: var(--spacing-sm);
   box-shadow:
-    0 0 0 4px rgba(0, 0, 0, 0.1),
+    0 0 0 4px rgb(0 0 0 / 10%),
     inset 0 0 0 3px #efefef,
     inset 0 0 10px black,
-    0 0 10px rgba(0, 0, 0, 0.2);
+    0 0 10px rgb(0 0 0 / 20%);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
   .circle {
     display: flex;
     justify-content: center;
@@ -47,7 +47,6 @@
   background-color: black;
   border-radius: 6px;
   transform-origin: bottom center; /* Ensure rotation happens from the bottom */
-  transition: transform 0.05s cubic-bezier(0.1, 2.7, 0, 0.68);
 }
 
 /* Hour Hand */

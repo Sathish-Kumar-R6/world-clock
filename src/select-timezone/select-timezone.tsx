@@ -1,5 +1,5 @@
 import { getAllTimeZones } from "../helper"
-import './select-timezone.css'
+import { Select } from 'verbose-uikit'
 
 type Props = {
   value: string;
@@ -11,10 +11,8 @@ function SelectTimeZone({ value, handleOnChange, disabled }: Props) {
 
   const allZones = getAllTimeZones()
 
-  return (
-    <select onChange={handleOnChange} value={value} disabled={disabled} title={value}>
-      {allZones.map((zone) => <option key={zone.timeZone} value={zone.timeZone}>{zone.timeZone} {zone.offset}</option>)}
-    </select>
+  return (  
+    <Select value={value} options={allZones} handleOnChange={handleOnChange} disabled={disabled} />
   )
 }
 

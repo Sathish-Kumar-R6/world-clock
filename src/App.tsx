@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './App.css';
-import Clock from './clock/WorldClock';
+import Clock from './clock/world-clock'
 import SelectTimeZone from './select-timezone/select-timezone';
 
 function App() {

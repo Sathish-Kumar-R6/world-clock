@@ -7,9 +7,9 @@ export function getAllTimeZones() {
           timeZoneName: 'longOffset'
       });
       const parts = formatter.formatToParts(now);
-      const offset = parts.find(part => part.type === 'timeZoneName')?.value;
+      const offset = parts.find(part => part.type === 'timeZoneName')?.value ?? '';
       
-      return { timeZone: tz, offset: offset };
+      return { value: tz, label: offset };
   });
 }
 

@@ -3514,6 +3514,11 @@ cjs-module-lexer@^1.0.0:
   resolved "https://registry.yarnpkg.com/cjs-module-lexer/-/cjs-module-lexer-1.4.3.tgz#0f79731eb8cfe1ec72acd4066efac9d61991b00d"
   integrity sha512-9z8TZaGM1pfswYeXrUpzPrkx8UnWYdhJclsiYMm6x/w5+nN+8Tf/LnAgfLGQCm59qAOxU8WwHEq2vNwF6i4j+Q==
 
+classnames@^2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.5.1.tgz#ba774c614be0f016da105c858e7159eae8e7687b"
+  integrity sha512-saHYOzhIQs6wy2sVxTM6bUDsQO4F50V9RQ22qBpEdCW+I+/Wmke2HOl6lS6dTpdxVhb88/I6+Hs+438c3lfUow==
+
 clean-css@^5.2.2:
   version "5.3.3"
   resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-5.3.3.tgz#b330653cd3bd6b75009cc25c714cae7b93351ccd"
@@ -7857,6 +7862,10 @@ package-json-from-dist@^1.0.0:
   resolved "https://registry.yarnpkg.com/package-json-from-dist/-/package-json-from-dist-1.0.1.tgz#4f1471a010827a86f94cfd9b0727e36d267de505"
   integrity sha512-UEZIS3/by4OC8vL3P2dTXRETpebLI2NiI5vIrjaD/5UtrkFX/tNbwjTSRAGC/+7CAo2pIcBaRgWmcBBHcsaCIw==
 
+"packages@link:packages":
+  version "0.0.0"
+  uid ""
+
 param-case@^3.0.4:
   version "3.0.4"
   resolved "https://registry.yarnpkg.com/param-case/-/param-case-3.0.4.tgz#7d17fe4aa12bde34d4a77d91acfb6219caad01c5"
@@ -10277,6 +10286,11 @@ typescript@^4.4.2:
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.9.5.tgz#095979f9bcc0d09da324d58d03ce8f8374cbe65a"
   integrity sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==
 
+typescript@^5.7.3:
+  version "5.8.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-5.8.2.tgz#8170b3702f74b79db2e5a96207c15e65807999e4"
+  integrity sha512-aJn6wq13/afZp/jT9QZmwEjDqqvSGp1VT5GVg+f/t6/oVyrgXM6BY1h9BRh/O5p3PlUPAe+WuiEZOmb/49RqoQ==
+
 unbox-primitive@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/unbox-primitive/-/unbox-primitive-1.1.0.tgz#8d9d2c9edeea8460c7f35033a88867944934d1e2"
@@ -10418,6 +10432,23 @@ vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
+
+verbose-uikit-select@1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/verbose-uikit-select/-/verbose-uikit-select-1.1.2.tgz#5e158998c2eac14f9e5ebfcf07c89734cac389f3"
+  integrity sha512-v8mWrCsPticzhX16pgAX3MUg/4X3eymB8FeOk9YquOvmcR2NZrtWWNZc6c6Oo4xz4AjikxaxJ1qeETjDHzYH2A==
+
+verbose-uikit@^1.0.7:
+  version "1.0.8"
+  resolved "https://registry.yarnpkg.com/verbose-uikit/-/verbose-uikit-1.0.8.tgz#0867325ead6a5d7f09ac6d36734831403a5ef577"
+  integrity sha512-+JW3BjNb+vnMcR1ardwHC//Hz8mtKn8nLkY5yv+IobL8wymfhppuCFvEld7BRF+us5XQ0jniYMqNxTjQnyrUWg==
+  dependencies:
+    classnames "^2.5.1"
+    packages "link:C:/Users/sathi/AppData/Local/Yarn/Cache/v6/npm-verbose-uikit-1.0.8-0867325ead6a5d7f09ac6d36734831403a5ef577-integrity/node_modules/verbose-uikit/packages"
+    react "^19.0.0"
+    react-dom "^19.0.0"
+    typescript "^5.7.3"
+    verbose-uikit-select "1.1.2"
 
 w3c-hr-time@^1.0.2:
   version "1.0.2"

@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import "./WorldClock.css";
+import "./world-clock.css";
 import { getTimeValue } from "../helper";
 
 type Props = {
